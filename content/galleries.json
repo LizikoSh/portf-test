@@ -1,0 +1,286 @@
+{
+  "galleries": [
+    {
+      "slug": "web",
+      "title": "Вебдизайн і підтримка сайту",
+      "description": "Сайти, лендинги та сторінки: структура, подача, адаптивність і практична робота з контентом.",
+      "kind": "web",
+      "visible": true,
+      "items": [
+        {
+          "title": "Колекторська контора «Анна і Єлизавета»",
+          "description": "Лендинг у стилізованій ретро-візуальній подачі з hero-блоком, навігацією, акцентною типографікою, CTA-кнопками та структурою під послуги, тарифи, відгуки, команду й контакти.",
+          "image": "/images/web-project-01.webp",
+          "alt": "Прев’ю сайту: колекторська контора Анна і Єлизавета",
+          "url": "https://anna-and-yelyzaveta.vercel.app/",
+          "visible": true
+        },
+        {
+          "title": "MotionLab",
+          "description": "Сторінка тренажерного залу з великим hero-банером, впізнаваним логотипом, контактним блоком у шапці та презентаційним першим екраном для знайомства з брендом.",
+          "image": "/images/web-project-02.webp",
+          "alt": "Прев’ю сайту: MotionLab",
+          "url": "https://lizikosh.github.io/bigfish/",
+          "visible": true
+        },
+        {
+          "title": "ДрамКоло",
+          "description": "Сторінка ДрамКоло: спільноти людей, котрі захоплюються грою на етнічних барабанах (джембе, дарбука, табли, кахон та ін.",
+          "image": "/images/web-project-03.webp",
+          "alt": "Прев’ю сайту: ДрамКоло",
+          "url": "https://drumkolo.vercel.app/",
+          "visible": true
+        },
+        {
+          "title": "Garmin MARQ",
+          "description": "Односторінковий промо-сайт про преміальні смарт-годинники Garmin MARQ - найкраще, що є в індустрії смарт-годинників.",
+          "image": "/images/web-project-04.webp",
+          "alt": "Прев’ю сайту: Garmin MARQ",
+          "url": "https://garmin-marq.vercel.app/",
+          "visible": true
+        },
+        {
+          "title": "Українські виробники",
+          "description": "Українські виробники, яких варто знати та підтримувати: одяг, їжа, косметика, прикраси, інтер’єр, технології та багато іншого.",
+          "image": "/images/web-project-05.webp",
+          "alt": "Прев’ю сайту: >Українські виробники",
+          "url": "https://vyrobnyky-ua.vercel.app/",
+          "visible": true
+        },
+        {
+          "title": "Офіційне джерело",
+          "description": "Знайдіть справжній сайт бренду. Перевірені сайти виробників, офіційні каталоги, регіональні представництва та дистриб’ютори - в єдиному місці.",
+          "image": "/images/web-project-06.webp",
+          "alt": "Прев’ю сайту: Офіційне джерело",
+          "url": "https://official-source.vercel.app/",
+          "visible": true
+        },
+        {
+          "title": "Дуб Ремонт. Будівельно-ремонтна компанія. ",
+          "description": "Люблю домашній затишок. Вирішила створити сайт про тих, хто для того затишку робить фізично та інженерно найскладнішу роботу.\n\n\"Дуб Ремонт\" - демонстраційний вебпроєкт для компанії, що займається ремонтом квартир і будинків під ключ.",
+          "image": "/images/2202611040957150001.png",
+          "alt": "дубремонт ",
+          "url": "https://dub-remont.vercel.app/",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "slug": "design",
+      "title": "Дизайн для сайту і соцмереж",
+      "description": "Банери, картки, оформлення для сайтів і соціальних мереж.",
+      "kind": "image",
+      "visible": true,
+      "items": [
+        {
+          "title": "Instagram-карусель (Велотренажер TACX Neo 5t)",
+          "image": "/images/tacx-neo-2t-portfolio.webp",
+          "visible": true
+        },
+        {
+          "title": "Смарт-браслет Garmin CIRQA (банер на головну)",
+          "image": "/images/cirqa-new-mainbanner-01.webp",
+          "visible": true
+        },
+        {
+          "title": "Банери на головну сторінку (прилади Garmin)",
+          "image": "/images/liziko-smm-site-001.webp",
+          "alt": "Великі банери на головну сторінку інтернет-магазину",
+          "visible": true
+        },
+        {
+          "title": "Instagram-карусель (тактичний прилад)",
+          "image": "/images/liziko-smm-site-004.webp",
+          "alt": "04. Картки для каруселі в соцмережах про тактичний прилад",
+          "visible": true
+        },
+        {
+          "title": "Instagram-карусель (смарт-ваги)",
+          "image": "/images/liziko-smm-site-003.webp",
+          "alt": "Картки для каруселі в соцмережах про смарт-ваги",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "slug": "ai-images",
+      "title": "AI- зображення",
+      "description": "Приклади AI-зображень і візуальних експериментів.",
+      "kind": "image",
+      "visible": true,
+      "items": [
+        {
+          "title": "Півонія в краплі роси",
+          "image": "/images/liziko-image-001.webp",
+          "alt": "Півонія в краплі роси",
+          "visible": true
+        },
+        {
+          "title": "Півонія у скляній сфері",
+          "image": "/images/liziko-image-002.webp",
+          "alt": "Півонія у скляній сфері",
+          "visible": true
+        },
+        {
+          "title": "Біла квітка після дощу",
+          "image": "/images/liziko-image-003.webp",
+          "alt": "Біла квітка після дощу",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинник GARMIN tactix 7 AMOLED (1)",
+          "image": "/images/liziko-image-004.webp",
+          "alt": "Смарт-годинник GARMIN tactix 7 AMOLED (1)",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинник GARMIN tactix 7 AMOLED (2)",
+          "image": "/images/liziko-image-005.webp",
+          "alt": "Смарт-годинник GARMIN tactix 7 AMOLED (2)",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинник GARMIN tactix 7 AMOLED (3)",
+          "image": "/images/liziko-image-006.webp",
+          "alt": "Смарт-годинник GARMIN tactix 7 AMOLED (3)",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинник GARMIN Instinct 3",
+          "image": "/images/liziko-image-007.webp",
+          "alt": "Смарт-годинник GARMIN Instinct 3",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинники GARMIN - Venu 4 i Lily 2",
+          "image": "/images/liziko-image-008.webp",
+          "alt": "Смарт-годинники GARMIN - Venu 4 i Lily 2",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинники GARMIN Instinct 3 - AMOLED i MIP",
+          "image": "/images/liziko-image-009.webp",
+          "alt": "Смарт-годинники GARMIN Instinct 3 - AMOLED i MIP",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинники GARMIN - Venu 4 i Lily 2 (2)",
+          "image": "/images/liziko-image-010.webp",
+          "alt": "Смарт-годинники GARMIN - Venu 4 i Lily 2 (2)",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинник GARMIN fenix 8",
+          "image": "/images/liziko-image-011.webp",
+          "alt": "Смарт-годинник GARMIN fenix 8",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинник GARMIN tactix 8 Solar",
+          "image": "/images/liziko-image-012.webp",
+          "alt": "Смарт-годинник GARMIN tactix 8 Solar",
+          "visible": true
+        },
+        {
+          "title": "Ескіз і цифровий малюнок",
+          "image": "/images/liziko-image-013.webp",
+          "alt": "Ескіз і цифровий малюнок",
+          "visible": true
+        },
+        {
+          "title": "Ескіз і цифровий малюнок (2)",
+          "image": "/images/liziko-image-014.webp",
+          "alt": "Ескіз і цифровий малюнок (2)",
+          "visible": true
+        },
+        {
+          "title": "Косметика ZO Skin Health (1)",
+          "image": "/images/liziko-image-015.webp",
+          "alt": "Косметика ZO Skin Health (1)",
+          "visible": true
+        },
+        {
+          "title": "Косметика ZO Skin Health (2)",
+          "image": "/images/liziko-image-016.webp",
+          "alt": "Косметика ZO Skin Health (2)",
+          "visible": true
+        },
+        {
+          "title": "Косметика ZO Skin Health (3)",
+          "image": "/images/liziko-image-017.webp",
+          "alt": "Косметика ZO Skin Health (3)",
+          "visible": true
+        },
+        {
+          "title": "Колекторська контора Анни і Єлизавети :)",
+          "image": "/images/liziko-image-018.webp",
+          "alt": "Колекторська контора Анни і Єлизавети :) ",
+          "visible": true
+        },
+        {
+          "title": "Мандрівниця",
+          "image": "/images/liziko-image-019.webp",
+          "alt": "Мандрівниця",
+          "visible": true
+        },
+        {
+          "title": "Кухня",
+          "image": "/images/liziko-image-020.webp",
+          "alt": "Кухня",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинники GARMIN tactix 8 Cerakote",
+          "image": "/images/liziko-image-021.webp",
+          "alt": "Смарт-годинники GARMIN tactix 8 Cerakote",
+          "visible": true
+        },
+        {
+          "title": "Смарт-годинники GARMIN tactix 8, соцмережі",
+          "image": "/images/liziko-image-022.webp",
+          "alt": "Смарт-годинники GARMIN tactix 8, соцмережі",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "slug": "ai-video",
+      "title": "AI- відео",
+      "description": "Короткі AI-ролики та промо-відео для товарів, брендів і соціальних мереж.",
+      "kind": "video",
+      "visible": true,
+      "items": [
+        {
+          "title": "AI-відео 01. Фрукти, вода, свіжість.",
+          "video": "/videos/liziko-video-001.mp4",
+          "poster": "/images/video-previews/liziko-video-pre-001.webp",
+          "visible": true
+        },
+        {
+          "title": "AI-відео 02. Біговий преміум смарт-годинник GARMIN Forerunner 970.",
+          "video": "/videos/liziko-video-002.mp4",
+          "poster": "/images/video-previews/liziko-video-pre-002.webp",
+          "visible": true
+        },
+        {
+          "title": "AI-відео 03. Промо колекторської контори - нашої із колегою :)))",
+          "video": "/videos/liziko-video-003.mp4",
+          "poster": "/images/video-previews/liziko-video-pre-003.webp",
+          "visible": true
+        },
+        {
+          "title": "AI-відео 04. Фрагмент про підтримку всередині ветеранської спільноти для ветерана після ампутації.",
+          "video": "/videos/liziko-video-004.mp4",
+          "poster": "/images/video-previews/liziko-video-pre-004.webp",
+          "visible": true
+        },
+        {
+          "title": "AI-відео 05. Біговий преміум смарт-годинник GARMIN Forerunner 970.",
+          "video": "/videos/liziko-video-005.mp4",
+          "poster": "/images/video-previews/liziko-video-pre-005.webp",
+          "visible": true
+        }
+      ]
+    }
+  ]
+}

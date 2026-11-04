@@ -1,0 +1,289 @@
+media:
+- name: images
+  label: Зображення
+  input: images
+  output: /images
+  categories:
+  - image
+  rename: safe
+- name: previews
+  label: Обкладинки відео
+  input: images/video-previews
+  output: /images/video-previews
+  categories:
+  - image
+  rename: safe
+- name: videos
+  label: Відео
+  input: videos
+  output: /videos
+  categories:
+  - video
+  rename: safe
+content:
+- name: portfolio_galleries
+  label: Галереї та роботи
+  type: file
+  path: content/galleries.json
+  format: json
+  operations:
+    delete: false
+    rename: false
+    create: false
+  fields:
+  - name: galleries
+    label: Галереї (додавати й сортувати)
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+    fields:
+    - name: slug
+      label: Код галереї латиницею (напр. branding)
+      type: string
+      required: true
+      description: Коди web, design, ai-images, ai-video — вже прив’язані до окремих сторінок. Нові коди
+        утворять нові галереї.
+    - name: title
+      label: Назва галереї
+      type: string
+    - name: description
+      label: Короткий опис
+      type: text
+    - name: kind
+      label: Тип вмісту
+      type: select
+      options:
+        values:
+        - name: image
+          label: Зображення
+        - name: video
+          label: Відео
+        - name: web
+          label: Вебпроєкти
+    - name: visible
+      label: Показувати галерею
+      type: boolean
+    - name: items
+      label: Роботи (можна міняти порядок)
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: title
+        label: Назва роботи
+        type: string
+      - name: description
+        label: Опис (для вебпроєктів)
+        type: text
+      - name: image
+        label: Зображення роботи — завантажити/обрати
+        type: image
+        options:
+          media: images
+      - name: video
+        label: Відео роботи — завантажити/обрати
+        type: file
+        options:
+          media: videos
+          categories:
+          - video
+      - name: media
+        label: Зовнішнє посилання на медіафайл (необов’язково)
+        type: string
+        description: Залиш порожнім, якщо файл завантажений нижче
+      - name: poster
+        label: Обкладинка відео
+        type: image
+        options:
+          media: previews
+      - name: alt
+        label: Alt зображення
+        type: string
+      - name: url
+        label: Посилання на проєкт
+        type: string
+      - name: visible
+        label: Показувати роботу
+        type: boolean
+- name: page_index
+  label: Головна сторінка
+  type: file
+  path: content/pages/index.json
+  format: json
+  operations:
+    delete: false
+    rename: false
+    create: false
+  fields:
+  - &id001
+    name: seo
+    label: SEO сторінки
+    type: object
+    fields:
+    - name: title
+      label: Заголовок у браузері
+      type: string
+    - name: description
+      label: Метаопис
+      type: text
+  - &id002
+    name: texts
+    label: Тексти сторінки
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Службовий ID (не змінювати)
+      type: string
+      readonly: true
+    - name: label
+      label: Місце на сторінці
+      type: string
+      readonly: true
+    - name: value
+      label: Текст
+      type: text
+  - &id003
+    name: links
+    label: Посилання та кнопки
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      type: string
+      readonly: true
+    - name: label
+      type: string
+      readonly: true
+    - name: url
+      label: Адреса посилання
+      type: string
+  - &id004
+    name: images
+    label: Зображення поза галереями
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      type: string
+      readonly: true
+    - name: label
+      type: string
+      readonly: true
+    - name: src
+      label: Шлях або URL зображення
+      type: string
+    - name: alt
+      label: Альтернативний текст (alt)
+      type: string
+- name: page_gallery_webdesign
+  label: Сторінка вебпроєктів
+  type: file
+  path: content/pages/gallery-webdesign.json
+  format: json
+  operations:
+    delete: false
+    rename: false
+    create: false
+  fields:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+- name: page_gallery_smm_site
+  label: Сторінка дизайну і соцмереж
+  type: file
+  path: content/pages/gallery-smm-site.json
+  format: json
+  operations:
+    delete: false
+    rename: false
+    create: false
+  fields:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+- name: page_gallery_images
+  label: Сторінка ШІ-зображень
+  type: file
+  path: content/pages/gallery-images.json
+  format: json
+  operations:
+    delete: false
+    rename: false
+    create: false
+  fields:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+- name: page_gallery_images_1
+  label: Додаткова сторінка ШІ-зображень
+  type: file
+  path: content/pages/gallery-images-1.json
+  format: json
+  operations:
+    delete: false
+    rename: false
+    create: false
+  fields:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+- name: page_gallery_video
+  label: Сторінка ШІ-відео
+  type: file
+  path: content/pages/gallery-video.json
+  format: json
+  operations:
+    delete: false
+    rename: false
+    create: false
+  fields:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+- name: page_gallery_video1
+  label: Додаткова сторінка відео 1
+  type: file
+  path: content/pages/gallery-video1.json
+  format: json
+  operations:
+    delete: false
+    rename: false
+    create: false
+  fields:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+- name: page_gallery_video_2
+  label: Додаткова сторінка відео 2
+  type: file
+  path: content/pages/gallery-video-2.json
+  format: json
+  operations:
+    delete: false
+    rename: false
+    create: false
+  fields:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
