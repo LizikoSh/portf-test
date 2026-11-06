@@ -1397,7 +1397,7 @@ text-shadow:
     max-width: none;
     margin-inline: auto;
     align-self: center;
-    padding: 202px 0 118px;
+    padding: 152px 0 168px;
   }
 }
 
@@ -1939,7 +1939,8 @@ text-shadow:
   .hero { overflow: visible; }
   .hero__copy {
     align-self: start;
-    padding: clamp(102px, 12svh, 125px) 0 0;
+    padding: clamp(147px, calc(12svh + 45px), 170px) 0 0;
+    transform: translateY(45px); /* Lower the entire text area on desktop */
   }
   .hero__copy .hero__kicker { margin-bottom: 10px; }
   .hero__copy h1 {
@@ -1964,7 +1965,7 @@ text-shadow:
 }
 /* Lower-height laptop viewports: tighter title and earlier highlight panel. */
 @media (min-width: 981px) and (max-height: 800px) {
-  .hero__copy { padding-top: 91px; }
+  .hero__copy { padding-top: 126px; transform: translateY(35px); }
   .hero__copy h1 { font-size: clamp(4.5rem, 6.2vw, 6.5rem); }
   .hero__copy .hero__tagline { margin-top: 23px; margin-bottom: 12px; }
   .hero-strip { top: clamp(575px, calc(100svh - 132px), 665px); }
