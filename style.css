@@ -1998,3 +1998,58 @@ text-shadow:
   }
   .about { padding-top: 84px; }
 }
+
+
+/* HERO V4 — desktop: crop the photo WITHIN the first screen.
+   The full natural image height must not extend the hero into the About section. */
+@media (min-width: 981px) {
+  .hero {
+    height: clamp(760px, 100svh, 920px);
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .hero__layout {
+    height: 100%;
+    min-height: 0;
+    grid-template-rows: minmax(0, 1fr);
+  }
+  .hero__visual {
+    min-height: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  .hero__photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .hero__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .hero-strip {
+    top: auto;
+    bottom: 18px;
+    transform: none;
+  }
+}
+
+/* HERO V5 — shift portrait upward so the chin is outside the visible frame.
+   Cropping happens only inside the photo container; the hero itself stays one screen high. */
+@media (min-width: 981px) {
+  .hero__photo img {
+    object-position: 50% 100%;
+    transform: scale(1.18);
+    transform-origin: center bottom;
+  }
+}
+@media (min-width: 641px) and (max-width: 980px) {
+  .hero__photo img {
+    object-position: 50% 78%;
+  }
+}
