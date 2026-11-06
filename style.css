@@ -1931,3 +1931,96 @@ text-shadow:
     gap: 8px;
   }
 }
+
+
+/* 2026-11-06 — Adaptive hero: keep all four highlights visible.
+   Desktop: compact vertical rhythm and move the strip into the photo area.
+   Tablet: strip follows the hero image in normal document flow.
+   Mobile: leave space for the two-column strip without covering CTA buttons. */
+@media (min-width: 981px) {
+  .hero__copy {
+    align-self: start;
+    padding: clamp(116px, 14vh, 142px) 0 0;
+  }
+
+  .hero__copy .hero__kicker {
+    margin-bottom: 12px;
+  }
+
+  .hero__copy h1 {
+    margin-bottom: 23px;
+    font-size: clamp(5.1rem, 7vw, 7.4rem);
+  }
+
+  .hero__copy .hero__tagline {
+    margin: 39px 0 19px;
+    line-height: 1.6;
+  }
+
+  .hero-strip {
+    top: clamp(665px, 82svh, 790px);
+    bottom: auto;
+    transform: none;
+  }
+
+  .hero-fact {
+    min-height: 140px;
+    padding: 20px 15px 22px;
+  }
+
+  .hero-fact strong {
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 980px) {
+  .hero {
+    overflow: visible;
+  }
+
+  .hero-strip {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin-top: -42px;
+    transform: none;
+  }
+
+  .hero-strip__grid {
+    position: relative;
+    z-index: 8;
+  }
+
+  .hero-fact {
+    min-height: 130px;
+    padding: 20px 15px;
+  }
+
+  .about {
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    overflow: visible;
+  }
+
+  .hero-strip {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin-top: 12px;
+    transform: none;
+  }
+
+  .hero {
+    padding-bottom: 28px;
+  }
+
+  .about {
+    padding-top: 84px;
+  }
+}
