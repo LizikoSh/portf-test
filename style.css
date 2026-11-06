@@ -1933,94 +1933,68 @@ text-shadow:
 }
 
 
-/* 2026-11-06 — Adaptive hero: keep all four highlights visible.
-   Desktop: compact vertical rhythm and move the strip into the photo area.
-   Tablet: strip follows the hero image in normal document flow.
-   Mobile: leave space for the two-column strip without covering CTA buttons. */
+/* HERO V3: compact first fold without cutting off highlight panel.
+   This is intentionally LAST so older breakpoint rules cannot override it. */
 @media (min-width: 981px) {
+  .hero { overflow: visible; }
   .hero__copy {
     align-self: start;
-    padding: clamp(116px, 14vh, 142px) 0 0;
+    padding: clamp(102px, 12svh, 125px) 0 0;
   }
-
-  .hero__copy .hero__kicker {
-    margin-bottom: 12px;
-  }
-
+  .hero__copy .hero__kicker { margin-bottom: 10px; }
   .hero__copy h1 {
-    margin-bottom: 23px;
-    font-size: clamp(5.1rem, 7vw, 7.4rem);
+    font-size: clamp(5rem, 6.8vw, 7.2rem);
+    margin-bottom: 16px;
   }
-
   .hero__copy .hero__tagline {
-    margin: 39px 0 19px;
-    line-height: 1.6;
+    margin: 29px 0 16px;
+    line-height: 1.55;
   }
-
   .hero-strip {
-    top: clamp(665px, 82svh, 790px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: clamp(635px, calc(100svh - 142px), 785px);
     bottom: auto;
     transform: none;
   }
-
-  .hero-fact {
-    min-height: 140px;
-    padding: 20px 15px 22px;
-  }
-
-  .hero-fact strong {
-    margin-bottom: 6px;
-  }
+  .hero-fact { min-height: 116px; padding: 17px 14px 16px; }
+  .hero-fact strong { margin-bottom: 5px; }
+  .hero-fact h2 { margin-bottom: 3px; }
 }
-
+/* Lower-height laptop viewports: tighter title and earlier highlight panel. */
+@media (min-width: 981px) and (max-height: 800px) {
+  .hero__copy { padding-top: 91px; }
+  .hero__copy h1 { font-size: clamp(4.5rem, 6.2vw, 6.5rem); }
+  .hero__copy .hero__tagline { margin-top: 23px; margin-bottom: 12px; }
+  .hero-strip { top: clamp(575px, calc(100svh - 132px), 665px); }
+  .hero-fact { min-height: 108px; padding: 13px 12px 14px; }
+}
+/* On extremely short desktop viewports, keep readability and allow scrolling. */
+@media (min-width: 981px) and (max-height: 650px) {
+  .hero-strip { top: 565px; }
+}
+/* On tablet, keep the strip in document flow, not clipped by the image. */
 @media (min-width: 641px) and (max-width: 980px) {
-  .hero {
-    overflow: visible;
-  }
-
+  .hero { overflow: visible; }
   .hero-strip {
     position: relative;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    margin-top: -42px;
+    inset: auto;
     transform: none;
+    margin-top: -36px;
   }
-
-  .hero-strip__grid {
-    position: relative;
-    z-index: 8;
-  }
-
-  .hero-fact {
-    min-height: 130px;
-    padding: 20px 15px;
-  }
-
-  .about {
-    padding-top: 110px;
-  }
+  .hero-strip__grid { position: relative; z-index: 8; }
+  .hero-fact { min-height: 128px; padding: 18px 14px; }
+  .about { padding-top: 105px; }
 }
-
+/* On mobile, make the two-column strip part of the section's flow. */
 @media (max-width: 640px) {
-  .hero {
-    overflow: visible;
-  }
-
+  .hero { overflow: visible; padding-bottom: 22px; }
   .hero-strip {
     position: relative;
-    right: auto;
-    bottom: auto;
-    left: auto;
+    inset: auto;
     margin-top: 12px;
     transform: none;
   }
-
-  .hero {
-    padding-bottom: 28px;
-  }
-
-  .about {
-    padding-top: 84px;
-  }
+  .about { padding-top: 84px; }
 }
